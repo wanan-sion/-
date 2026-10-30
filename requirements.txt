@@ -1,0 +1,16 @@
+# 核心功能零依赖（纯标准库即可运行）
+# 以下为可选增强依赖，按需安装，不影响基础使用
+
+# 图像感知增强
+Pillow>=9.0
+numpy>=1.24
+
+# 轻量模型推理（接入 ONNX / 边缘模型时使用）
+onnxruntime>=1.15
+
+# REST API 服务（python app.py --server）
+fastapi>=0.100
+uvicorn>=0.23
+
+# 配置解析（使用 .yaml 时）
+PyYAML>=6.0

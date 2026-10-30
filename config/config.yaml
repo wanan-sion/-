@@ -1,0 +1,20 @@
+# 多模态轻量化智能感知交互平台 — 配置示例
+# 复制为 config.yaml 或直接修改本文件；程序会按优先级合并默认配置。
+
+app:
+  name: "多模态轻量感知交互平台"
+  version: "0.1.0"
+  history_size: 10          # 会话历史轮数
+
+perception:
+  vision:
+    enabled: true           # 视觉感知开关
+    # model: "./models/mobilenet.onnx"   # 可选：轻量模型路径
+  audio:
+    enabled: true           # 语音感知开关
+  text:
+    enabled: true           # 文本感知开关
+
+server:
+  host: "127.0.0.1"
+  port: 8000
